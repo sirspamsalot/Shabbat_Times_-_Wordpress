@@ -1,23 +1,23 @@
 <?php
 /*
-Plugin Name: Shabbos Times
-Plugin URI: http://Yair.Silbermintz.com/projects/shabbostimesplugin
-Description: Customizable shabbos times widget
-Version: 0.1
-Author: Yair Silbermintz
-Author URI: http://Yair.Silbermintz.com
-License: DBAB
+Plugin Name: Shabbat Times
+Plugin URI: https://github.com/sirspamsalot/Shabbat_Times_-_Wordpress
+Description: Customizable shabbat times widget
+Version: 0.2
+Authors: Yair Silbermintz & Shalom Silbermintz
+Author URI: http://Shalom.Silbermintz.com
+License: DBAB - http://www.dbad-license.org/
 */
 
 //define plugins defaults
 $template = '
 <ul id="ShabbosTimes">
-    <h3>Times for parshas [parsha]</h3>
+    <h3>Times for parashat [parsha]</h3>
     <li>Candle lighting: [candles]</li>
     <li>Havdalah (72 min): [havdalah]</li>
 </ul>
 ';
-$defaults = array('title' => 'Local shabbos times', 'zip' => 90210, 'offset' => 72, 'template' => $template, 'timeFormat' => 'g:ia l, F jS');
+$defaults = array('title' => 'Local shabbos times', 'zip' => 87187, 'offset' => 72, 'template' => $template, 'timeFormat' => 'g:ia l, F jS');
 
 
 //grap times from the api and return them as an array in PHP friendly formats
